@@ -102,3 +102,53 @@
         }
     }
 }
+
+footer {
+    .cont {
+        background-color: green;
+        margin: 100px auto 0;
+
+        & .logo-row {
+            position: relative;
+            height: 30vh;
+            background-color: red;
+
+
+
+            .fire {
+                position: absolute;
+                width: 30%;
+                height: 100%;
+                left: 30%;
+                top: 0%;
+                transform: translate(25%,0%);
+                background-color: purple;
+                margin: auto;
+            }
+
+            .logo {
+                position: relative;
+                width: 150px;
+                height: 150px;
+                left: 45%;
+                top: 0%;
+                transform: translate(50%,50%);
+                background-color: yellow;
+                border-radius: 50%;
+                z-index: 1;
+            }
+        }
+
+        .container {
+            background-color: black;
+            .footer-container {
+                //background-color: black;
+                padding: 15px;
+
+                .footer-container-title {
+                    color: white;
+                }
+            }
+        }
+    }
+}

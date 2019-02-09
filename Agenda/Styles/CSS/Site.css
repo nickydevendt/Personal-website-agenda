@@ -76,8 +76,38 @@ body .row {
         margin: 0 auto;
         display: block; }
 
-body {
-  overflow-x: hidden; }
+footer .cont {
+  background-color: green;
+  margin: 100px auto 0; }
+  footer .cont .logo-row {
+    position: relative;
+    height: 30vh;
+    background-color: red; }
+    footer .cont .logo-row .fire {
+      position: absolute;
+      width: 30%;
+      height: 100%;
+      left: 30%;
+      top: 0%;
+      transform: translate(25%, 0%);
+      background-color: purple;
+      margin: auto; }
+    footer .cont .logo-row .logo {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      left: 45%;
+      top: 0%;
+      transform: translate(50%, 50%);
+      background-color: yellow;
+      border-radius: 50%;
+      z-index: 1; }
+  footer .cont .container {
+    background-color: black; }
+    footer .cont .container .footer-container {
+      padding: 15px; }
+      footer .cont .container .footer-container .footer-container-title {
+        color: white; }
 
 /*.navbar.navbar-9 .navbar-toggler-icon {
     background-image: url('.https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
