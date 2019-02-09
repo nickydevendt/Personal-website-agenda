@@ -1,0 +1,84 @@
+﻿/* neccesary css*/
+/*@import "Main.scss";*/
+body .row {
+  background-color: transparent;
+  padding: 0; }
+
+.home-banner {
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  display: block; }
+  .home-banner .image {
+    background-color: green;
+    background: top center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh; }
+  .home-banner img {
+    filter: brightness(30%); }
+
+.home-body {
+  width: 100%; }
+  .home-body .row {
+    margin: 0;
+    padding: 0; }
+    .home-body .row .jumbotron {
+      background-color: transparent;
+      height: 60vh;
+      background-image: none; }
+      .home-body .row .jumbotron .body-banner-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60vw;
+        border: 3px #fff solid;
+        padding: 15px;
+        color: white; }
+        .home-body .row .jumbotron .body-banner-text div:first-child {
+          font-size: 1.5rem; }
+        .home-body .row .jumbotron .body-banner-text div:nth-child(2) {
+          /*background-color: green;*/
+          font-size: 4rem;
+          text-transform: capitalize;
+          line-height: 4.7rem; }
+
+.home-body .row .jumbotron .body-banner-text .center-block {
+  width: 200px !important;
+  margin: 0 auto; }
+
+.home-rows {
+  margin: 0 auto !important;
+  width: 90%; }
+  .home-rows .home-cols {
+    height: 400px;
+    padding: 15px;
+    position: relative; }
+    .home-rows .home-cols img {
+      height: 100%;
+      width: 100%;
+      margin: auto; }
+  .home-rows .row {
+    display: flex; }
+    .home-rows .row .home-block {
+      box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 0 auto; }
+      .home-rows .row .home-block h4 {
+        text-align: center;
+        font-size: 3rem; }
+      .home-rows .row .home-block p {
+        text-align: left;
+        font-size: 1.5rem;
+        padding: 0 7rem; }
+      .home-rows .row .home-block .cols-img {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+        display: block; }
+
+body {
+  overflow-x: hidden; }
+
+/*.navbar.navbar-9 .navbar-toggler-icon {
+    background-image: url('.https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+}*/

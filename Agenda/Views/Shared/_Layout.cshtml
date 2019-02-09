@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Styles/CSS/site.css")
+    @Styles.Render("~/Styles/CSS/Needed/bootstrap-theme.css")
+    @Styles.Render("~/Styles/CSS/Needed/bootstrap.css")
+    @Styles.Render("~/Styles/SCSS/HomeStyle.scss")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Life tracker", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-static-top justify-content-end">
+                    @* link name / action name / controller name *@
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Agenda", "Index", "Agenda")</li>
+                    <li>@Html.ActionLink("To-do", "Index", "Todo")</li>
+                    <li>@Html.ActionLink("Learn", "Index", "learn")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="home-body">
+        @RenderBody()
+        <footer>
+
+            <div class="container logo-container">
+                <div class="row">
+                    <div class="fire" style="background-color: red; height: 200px; width: 300px;"></div>
+                    <div class="logo" style="background-color:yellow; height: 50px; width: 50px;"></div>
+                </div>
+                <div class="row">
+                    <div class="row"><h4>Nicky's statistics.</h4></div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>tekst 1</h5>
+                            <span>12345</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>tekst 1</h5>
+                            <span>12345</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>tekst 1</h5>
+                            <span>12345</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <p>&copy; @DateTime.Now.Year - Nicky de Vendt</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
